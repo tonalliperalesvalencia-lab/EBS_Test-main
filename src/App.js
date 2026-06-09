@@ -10,12 +10,13 @@ import Catalogue from "./Components/Catalogue";
 import Repair from "./Components/Repair";
 import PropUp from "./Components/PropUp";
 import FAQ from "./Components/FAQ";
+import Contact from "./Components/Contact";
 
 function App() {
   const [page, setPage] = useState("home");
 
   if (page === "catalogue") {
-    return <Catalogue onBack={() => { setPage("home"); window.resetScroll?.(); }} />;
+    return <Catalogue onBack={() => { setPage("home"); window.resetScroll?.(); }} onNavigate={setPage}/>;
   }
 
   if (page === "repair") {
@@ -28,6 +29,10 @@ function App() {
 
   if (page === "faq") {
     return <FAQ onBack={() => { setPage("home"); window.resetScroll?.(); }} />;
+  }
+
+  if (page === "contact") {
+    return <Contact onBack={() => { setPage("home"); window.resetScroll?.(); }} />;
   }
 
   return (

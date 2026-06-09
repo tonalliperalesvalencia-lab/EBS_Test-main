@@ -87,7 +87,7 @@ const badgeColors = {
   "Precision": "bg-indigo-100 text-indigo-800",
 };
 
-const Catalogue = ({ onBack }) => {
+const Catalogue = ({ onBack, onNavigate }) => {
   const [activeCategory, setActiveCategory] = useState("All");
   const scrollRefs = useRef({}); 
 
@@ -258,7 +258,7 @@ const Catalogue = ({ onBack }) => {
       <div className="bg-[#1c0f0a] text-white py-16 text-center">
         <h3 className="text-3xl font-bold mb-3">Can't find what you're looking for?</h3>
         <p className="text-[#d4b49a] mb-6">Our team is ready to help you find the perfect solution.</p>
-        <button className="px-8 py-3 bg-[#b5621e] text-[#1c0f0a] font-bold rounded-full hover:bg-amber-300 transition-colors">
+        <button onClick={() => { onNavigate("contact"); window.resetScroll?.(); }} className="px-8 py-3 bg-[#b5621e] text-[#1c0f0a] font-bold rounded-full hover:bg-amber-300 transition-colors">
           Contact Us
         </button>
       </div>
