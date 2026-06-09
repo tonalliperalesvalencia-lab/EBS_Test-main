@@ -47,7 +47,7 @@ const process = [
   {
     step: "04",
     title: "Return & Warranty",
-    desc: "Your machine comes back in peak condition, backed by a comprehensive 90‑day parts and labour warranty.",
+    desc: "Your machine comes back in peak condition, backed by a comprehensive 90‑day parts and labor warranty.",
   },
 ];
 
@@ -158,32 +158,6 @@ const Repair = ({ onBack }) => {
               </div>
             </div>
           </Reveal>
-        </div>
-      </div>
-
-      {/* Trust Bar – National Clients & Stats */}
-      <div className="bg-white border-b border-[#e8d5c0]">
-        <div className="max-w-[1240px] mx-auto px-4 py-10">
-          {/* Client Logos (text) */}
-          <div className="flex flex-wrap justify-center gap-8 md:gap-12 mb-10">
-            {brandClients.map((client) => (
-              <div
-                key={client.name}
-                className="text-2xl md:text-3xl font-extrabold text-[#1c0f0a]/70 tracking-tight uppercase"
-              >
-                {client.name}
-              </div>
-            ))}
-          </div>
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-            {stats.map((stat) => (
-              <div key={stat.label} className="p-4">
-                <div className="text-3xl font-extrabold text-[#b5621e]">{stat.value}</div>
-                <div className="text-sm text-gray-500 mt-1">{stat.label}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
 
