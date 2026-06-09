@@ -95,7 +95,7 @@ const Contact = ({ onBack }) => {
                 onClick={handleSubmit}
                 className="w-full py-3.5 bg-[#1c0f0a] text-white font-bold rounded-xl hover:bg-opacity-90 transition-all duration-200 text-lg"
               >
-                Submit Repair Request
+                Submit
               </button>
             </div>
           )}
