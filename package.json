@@ -2,7 +2,7 @@
   "name": "ebs-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tonalliperalesvalencia-lab.github.io/EBS_Test-main/",
+ "homepage": "https://www.espressobeveragesolutions.com",
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
     "@testing-library/dom": "^10.4.0",
