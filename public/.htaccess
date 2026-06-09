@@ -1,0 +1,15 @@
+Options -MultiViews
+
+RewriteEngine On
+RewriteBase /
+
+# If the request is an actual file, serve it normally
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# If the request is an actual folder, serve it normally
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Otherwise, send everything to React
+RewriteRule ^ index.html [L]
