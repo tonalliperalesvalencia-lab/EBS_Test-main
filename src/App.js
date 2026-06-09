@@ -44,6 +44,7 @@ function App() {
       <Analytics />
       <Testimonials />
       <Footer onNavigate={setPage} />
+      <FAQ onNavigate={setPage} />
     </div>
   );
 }
