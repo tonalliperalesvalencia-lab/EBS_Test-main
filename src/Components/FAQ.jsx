@@ -116,67 +116,8 @@ const FAQItem = ({ q, a, index }) => {
     </Reveal>
   );
 };
-/*
-const FAQItem = ({ q, a, index }) => {
-  const [open, setOpen] = useState(false);
-  return (
-    <Reveal anim="anim-fade-up" delay={`d-${Math.min(index + 1, 7)}`}>
-      <div
-        className={`border-b cursor-pointer group transition-colors duration-200 transition ease-in ${open ? 'bg-black' : ''}`}
-        style={{ borderColor: 'rgba(107,63,42,0.15)' }}
-        onClick={() => setOpen(!open)}
-      >
-        <div className="flex justify-between items-center py-6 gap-6">
-          <h4
-            className={`text-lg font-light leading-snug transition-colors duration-200 transition ease-ingroup-hover:opacity-70 ${open ? 'text-white' : 'text-[#1c0f0a]'}`}
-            style={{ fontFamily: 'Cormorant Garamond,serif', fontSize: 'clamp(1rem,1.5vw,1.25rem)' }}
-          >{q}</h4>
-          <span
-            className={`text-2xl shrink-0 transition-transform duration-300 font-light transform ${open ? 'rotate-45 text-white' : 'rotate-0 text-[#b5621e]'}`}
-            style={{ lineHeight: 1 }}
-          >+</span>
-        </div>
-        {open && (
-          <p className="pb-6 text-base font-light leading-relaxed anim-fade-up text-white">
-            {a}
-          </p>
-        )}
-      </div>
-    </Reveal>
-  );
-};
-*/
-/*
-const FAQItem = ({ q, a, index }) => {
-  const [open, setOpen] = useState(false);
-  return (
-    <Reveal anim="anim-fade-up" delay={`d-${Math.min(index + 1, 7)}`}>
-      <div
-        className="border-b cursor-pointer group"
-        style={{borderColor:'rgba(107,63,42,0.15)'}}
-        onClick={() => setOpen(!open)}
-      >
-        <div className="flex justify-between items-center py-6 gap-6">
-          <h4
-            className="text-lg font-light leading-snug transition-colors duration-200 group-hover:opacity-70"
-            style={{fontFamily:'Cormorant Garamond,serif', color:'#1c0f0a', fontSize:'clamp(1rem,1.5vw,1.25rem)'}}
-          >{q}</h4>
-          <span
-            className="text-2xl shrink-0 transition-transform duration-300 font-light"
-            style={{color:'#b5621e', transform: open ? 'rotate(45deg)' : 'rotate(0deg)', lineHeight:1}}
-          >+</span>
-        </div>
-        {open && (
-          <p className="pb-6 text-base font-light leading-relaxed anim-fade-up" style={{color:'rgba(28,15,10,0.6)'}}>
-            {a}
-          </p>
-        )}
-      </div>
-    </Reveal>
-  );
-};*/
 
-const FAQ = ({ onBack, onNavigate  }) => {
+const FAQ = ({ onBack, onNavigate}) => {
   const [activeCategory, setActiveCategory] = useState("All");
   useEffect(() => { window.resetScroll?.(); }, []);
 
@@ -273,8 +214,7 @@ const FAQ = ({ onBack, onNavigate  }) => {
             </div>
           </Reveal>
           <Reveal anim="anim-fade-right" delay="d-2">
-          <button
-            onClick={() => {onNavigate("contact");window.resetScroll?.();}} className="inline-block px-10 py-4 text-sm font-bold tracking-widest uppercase rounded-full bg-[#b5621e] text-[#faf4eb] hover:bg-[#faf4eb] hover:text-[#1c0f0a] transition-colors duration-300 shrink-0"
+          <button onClick={() => { onNavigate("contact"); window.resetScroll?.(); }} className="inline-block px-10 py-4 text-sm font-bold tracking-widest uppercase rounded-full bg-[#b5621e] text-[#faf4eb] hover:bg-[#faf4eb] hover:text-[#1c0f0a] transition-colors duration-300 shrink-0"
             >Contact Us
           </button>
           </Reveal>
