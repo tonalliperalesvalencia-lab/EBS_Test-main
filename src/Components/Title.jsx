@@ -26,16 +26,6 @@ function Title() {
           <p className="text-lg font-light max-w-sm leading-relaxed" style={{color:'rgba(250,244,235,0.6)'}}>
             Premium espresso equipment, expert repair, and complete beverage solutions for cafés and businesses.
           </p>
-          <div className="flex gap-10">
-            <div className="text-right">
-              <div className="text-2xl font-semibold" style={{color:'#faf4eb'}}>10,000+</div>
-              <div className="text-xs tracking-widest uppercase" style={{color:'rgba(250,244,235,0.4)'}}>Installations</div>
-            </div>
-            <div className="text-right">
-              <div className="text-2xl font-semibold" style={{color:'#faf4eb'}}>98.9%</div>
-              <div className="text-xs tracking-widest uppercase" style={{color:'rgba(250,244,235,0.4)'}}>Satisfaction</div>
-            </div>
-          </div>
         </div>
 
         <div className="animate-fade-up delay-3 mt-10 flex items-center gap-3">
