@@ -37,8 +37,8 @@ const Footer = ({ onNavigate }) => (
             </div>
             <div className='flex flex-col gap-3'>
               <span className='text-xs tracking-widest uppercase mb-1' style={{color:'rgba(212,180,154,0.3)'}}>Contact</span>
-              <span className='text-sm font-light' style={{color:'rgba(212,180,154,0.55)'}}>info@expressbev.com</span>
-              <span className='text-sm font-light' style={{color:'rgba(212,180,154,0.55)'}}>+1 (956) 000-0000</span>
+              <span className='text-sm font-light' style={{color:'rgba(212,180,154,0.55)'}}>Sales@espressobeveragesolutions.com</span>
+              <span className='text-sm font-light' style={{color:'rgba(212,180,154,0.55)'}}>+1 (956) 303-3469</span>
               <span className='text-sm font-light' style={{color:'rgba(212,180,154,0.55)'}}>Pharr, TX</span>
             </div>
           </div>
