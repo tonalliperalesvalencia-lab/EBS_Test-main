@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Reveal } from "./useInView";
 
-const About = ({ onBack }) => {
+const Contact = ({ onBack }) => {
   // This resets the scroll engine when the page loads
   useEffect(() => { window.resetScroll?.(); }, []);
 
@@ -31,4 +31,4 @@ const About = ({ onBack }) => {
   );
 };
 
-export default About;
+export default Contact;
