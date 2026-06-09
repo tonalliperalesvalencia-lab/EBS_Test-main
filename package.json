@@ -2,8 +2,9 @@
   "name": "ebs-website",
   "version": "0.1.0",
   "private": true,
- "homepage": "https://www.espressobeveragesolutions.com",
+  "homepage": "https://www.espressobeveragesolutions.com",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.1.18",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",

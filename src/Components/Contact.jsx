@@ -86,7 +86,7 @@ const Contact = ({ onBack }) => {
                 <textarea
                   value={formData.issue}
                   onChange={(e) => setFormData({ ...formData, issue: e.target.value })}
-                  placeholder="e.g. Machine not reaching brew temperature, steam wand blocked..."
+                  placeholder="e.g. Example inquiry..."
                   rows={4}
                   className="w-full px-4 py-3 rounded-xl border border-[#e8d5c0] text-[#1c0f0a] placeholder-gray-300 focus:outline-none focus:border-[#1c0f0a] transition-colors resize-none"
                 />

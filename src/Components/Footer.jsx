@@ -24,7 +24,7 @@ const Footer = ({ onNavigate }) => (
                 { label: 'Repair',    page: 'repair' },
                 { label: 'Prop-Up',   page: 'propup' },
                 { label: 'FAQ',       page: 'faq' },
-                { label: 'Contact',       page: 'contact' },
+                { label: 'Contact',   page: 'contact' },
               ].map(({ label, page }) => (
                 <span
                   key={label}

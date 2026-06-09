@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
 import { Reveal } from "./useInView";
+import React, { useState, useEffect, useRef } from "react";
 
 const categories = [
   {
@@ -176,7 +176,7 @@ const FAQItem = ({ q, a, index }) => {
   );
 };*/
 
-const FAQ = ({ onBack }) => {
+const FAQ = ({ onBack, onNavigate  }) => {
   const [activeCategory, setActiveCategory] = useState("All");
   useEffect(() => { window.resetScroll?.(); }, []);
 
@@ -273,7 +273,7 @@ const FAQ = ({ onBack }) => {
             </div>
           </Reveal>
           <Reveal anim="anim-fade-right" delay="d-2">
-            <a
+            <button onClick={() => { onNavigate("contact"); window.resetScroll?.(); }}
               href="mailto:info@expressbev.com"
               className="inline-block px-10 py-4 text-sm font-medium tracking-widest uppercase rounded-full transition-all duration-300 shrink-0"
               style={{background:'#b5621e', color:'#faf4eb'}}
@@ -281,7 +281,7 @@ const FAQ = ({ onBack }) => {
               onMouseLeave={e => { e.currentTarget.style.background='#b5621e'; e.currentTarget.style.color='#faf4eb'; }}
             >
               Contact Us
-            </a>
+            </button>
           </Reveal>
         </div>
       </div>
