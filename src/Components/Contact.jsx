@@ -17,7 +17,7 @@ const Contact = ({ onBack }) => {
   return (
     <div className="min-h-screen" style={{ background: '#faf4eb' }}>
 
-      {/* Every page needs its own navbar since the home one disappears */}
+      {/* Navbar */}
       <div className="w-full fixed top-0 left-0 z-50 shadow-sm"
         style={{ background: 'rgba(250,244,235,0.97)', backdropFilter: 'blur(8px)' }}>
         <div className="flex justify-between items-center h-20 max-w-[1400px] mx-auto px-8">
@@ -35,9 +35,9 @@ const Contact = ({ onBack }) => {
       <div className="bg-[#faf4eb] border-t border-[#e8d5c0] py-20">
         <div className="max-w-2xl mx-auto px-4">
           <div className="text-center mb-10">
-            <h3 className="text-4xl font-bold text-[#1c0f0a] mb-3">Book a Repair</h3>
+            <h3 className="text-4xl font-bold text-[#1c0f0a] mb-3">Contact Us</h3>
             <p className="text-gray-500">
-              Tell us about your machine and we’ll respond within 24 hours with a diagnostic plan.
+              Send us a message to get in contact and our team will respond within 24 hours.
             </p>
           </div>
 
@@ -46,7 +46,7 @@ const Contact = ({ onBack }) => {
               <div className="text-5xl mb-4">✅</div>
               <h4 className="text-2xl font-bold text-[#1c0f0a] mb-2">Request Received</h4>
               <p className="text-gray-500">
-                We'll reach out to {formData.email} within 24 hours to confirm your booking.
+                We'll reach out to {formData.email} within 24 hours to answer your inquiry.
               </p>
             </div>
           ) : (
@@ -71,7 +71,7 @@ const Contact = ({ onBack }) => {
                   className="w-full px-4 py-3 rounded-xl border border-[#e8d5c0] text-[#1c0f0a] placeholder-gray-300 focus:outline-none focus:border-[#1c0f0a] transition-colors"
                 />
               </div>
-              <div>
+              {/* <div>
                 <label className="block text-sm font-semibold text-[#1c0f0a] mb-1.5">Machine Brand & Model</label>
                 <input
                   type="text"
@@ -80,9 +80,9 @@ const Contact = ({ onBack }) => {
                   placeholder="e.g. La Marzocco Linea PB"
                   className="w-full px-4 py-3 rounded-xl border border-[#e8d5c0] text-[#1c0f0a] placeholder-gray-300 focus:outline-none focus:border-[#1c0f0a] transition-colors"
                 />
-              </div>
+              </div> */}
               <div>
-                <label className="block text-sm font-semibold text-[#1c0f0a] mb-1.5">Describe the Issue</label>
+                <label className="block text-sm font-semibold text-[#1c0f0a] mb-1.5">Explain your reason for inquiry</label>
                 <textarea
                   value={formData.issue}
                   onChange={(e) => setFormData({ ...formData, issue: e.target.value })}
