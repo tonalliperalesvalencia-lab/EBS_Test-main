@@ -273,15 +273,10 @@ const FAQ = ({ onBack, onNavigate  }) => {
             </div>
           </Reveal>
           <Reveal anim="anim-fade-right" delay="d-2">
-            <button onClick={() => { onNavigate("contact"); window.resetScroll?.(); }}
-              href="mailto:info@expressbev.com"
-              className="inline-block px-10 py-4 text-sm font-medium tracking-widest uppercase rounded-full transition-all duration-300 shrink-0"
-              style={{background:'#b5621e', color:'#faf4eb'}}
-              onMouseEnter={e => { e.currentTarget.style.background='#faf4eb'; e.currentTarget.style.color='#1c0f0a'; }}
-              onMouseLeave={e => { e.currentTarget.style.background='#b5621e'; e.currentTarget.style.color='#faf4eb'; }}
-            >
-              Contact Us
-            </button>
+          <button
+            onClick={() => {onNavigate("contact");window.resetScroll?.();}} className="inline-block px-10 py-4 text-sm font-bold tracking-widest uppercase rounded-full bg-[#b5621e] text-[#faf4eb] hover:bg-[#faf4eb] hover:text-[#1c0f0a] transition-colors duration-300 shrink-0"
+            >Contact Us
+          </button>
           </Reveal>
         </div>
       </div>
