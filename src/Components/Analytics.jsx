@@ -5,7 +5,7 @@ const stats = [
   { value: "98.9%",  label: "Client Satisfaction", sub: "+2.3% this year" },
   { value: "10,000+", label: "Installations",        sub: "+15% year on year" },
   { value: "24/7",   label: "Support Available",    sub: "15 min avg. response" },
-  { value: "2 Yrs", label: "Industry Experience",  sub: "Supported by 11+ years of industry experience" },
+  { value: "12 Yrs", label: "Industry Experience",  sub: "Turning experience into impact." },
 ]
 
 const delays = ['d-0','d-2','d-3','d-4']
