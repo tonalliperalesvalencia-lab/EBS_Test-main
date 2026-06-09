@@ -32,7 +32,7 @@ const Contact = ({ onBack }) => {
       </div>
 
       {/* Booking Form */}
-      <div className="bg-[#faf4eb] border-t border-[#e8d5c0] py-20">
+      <div className="bg-[#faf4eb] border-t border-[#e8d5c0] py-40">
         <div className="max-w-2xl mx-auto px-4">
           <div className="text-center mb-10">
             <h3 className="text-4xl font-bold text-[#1c0f0a] mb-3">Contact Us</h3>
