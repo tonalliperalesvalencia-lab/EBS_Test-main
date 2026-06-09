@@ -28,7 +28,7 @@ function App() {
   }
 
   if (page === "faq") {
-    return <FAQ onBack={() => { setPage("home"); window.resetScroll?.(); }} />;
+    return <FAQ onBack={() => { setPage("home"); window.resetScroll?.(); }} onNavigate={setPage}/>;
   }
 
   if (page === "contact") {
@@ -44,7 +44,6 @@ function App() {
       <Analytics />
       <Testimonials />
       <Footer onNavigate={setPage} />
-      <FAQ onNavigate={setPage} />
     </div>
   );
 }
