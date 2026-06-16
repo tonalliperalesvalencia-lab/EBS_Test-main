@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Reveal } from "./useInView";
+import emailjs from '@emailjs/browser';
 
 const Contact = ({ onBack }) => {
   // This resets the scroll engine when the page loads
@@ -7,13 +8,37 @@ const Contact = ({ onBack }) => {
 
   const [formData, setFormData] = useState({ name: "", email: "", machine: "", issue: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = () => {
-    if (formData.name && formData.email && formData.machine) {
-      setSubmitted(true);
-    }
+
+  const handleSubmit = async () => {
+    if (!formData.name || !formData.email || !formData.issue) {
+      setError("Please fill out all fields before submitting.");
+      return;
   };
 
+  setLoading(true);
+    setError("");
+
+    try {
+      await emailjs.send(
+        'YOUR_SERVICE_ID',
+        'YOUR_TEMPLATE_ID',
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          issue: formData.issue,
+        },
+        'YOUR_PUBLIC_KEY'
+      );
+      setSubmitted(true);
+    } catch (err) {
+      setError("Something went wrong. Please try again or call us directly.");
+    } finally {
+      setLoading(false);
+    }
+  };
   return (
     <div className="min-h-screen" style={{ background: '#faf4eb' }}>
 
@@ -71,16 +96,6 @@ const Contact = ({ onBack }) => {
                   className="w-full px-4 py-3 rounded-xl border border-[#e8d5c0] text-[#1c0f0a] placeholder-gray-300 focus:outline-none focus:border-[#1c0f0a] transition-colors"
                 />
               </div>
-              {/* <div>
-                <label className="block text-sm font-semibold text-[#1c0f0a] mb-1.5">Machine Brand & Model</label>
-                <input
-                  type="text"
-                  value={formData.machine}
-                  onChange={(e) => setFormData({ ...formData, machine: e.target.value })}
-                  placeholder="e.g. La Marzocco Linea PB"
-                  className="w-full px-4 py-3 rounded-xl border border-[#e8d5c0] text-[#1c0f0a] placeholder-gray-300 focus:outline-none focus:border-[#1c0f0a] transition-colors"
-                />
-              </div> */}
               <div>
                 <label className="block text-sm font-semibold text-[#1c0f0a] mb-1.5">Explain your reason for inquiry</label>
                 <textarea
@@ -91,11 +106,17 @@ const Contact = ({ onBack }) => {
                   className="w-full px-4 py-3 rounded-xl border border-[#e8d5c0] text-[#1c0f0a] placeholder-gray-300 focus:outline-none focus:border-[#1c0f0a] transition-colors resize-none"
                 />
               </div>
+
+              {error && (
+                <p className="text-red-500 text-sm">{error}</p>
+              )}
+
               <button
                 onClick={handleSubmit}
-                className="w-full py-3.5 bg-[#1c0f0a] text-white font-bold rounded-xl hover:bg-opacity-90 transition-all duration-200 text-lg"
+                disabled={loading}
+                className="w-full py-3.5 bg-[#1c0f0a] text-white font-bold rounded-xl hover:bg-opacity-90 transition-all duration-200 text-lg disabled:opacity-50"
               >
-                Submit
+                {loading ? 'Sending...' : 'Submit'}
               </button>
             </div>
           )}
