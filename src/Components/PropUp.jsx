@@ -224,7 +224,7 @@ const PropUp = ({ onBack }) => {
             </p>
           </Reveal>
           <Reveal anim="anim-scale-in" delay="d-4">
-            <a href="mailto:info@expressbev.com"
+            <a href="mailto:sales@expressbeveragesolutions.com"
               className="inline-block px-10 py-4 text-sm font-medium tracking-widest uppercase rounded-full transition-all duration-300"
               style={{background:'#1c0f0a', color:'#faf4eb'}}
               onMouseEnter={e=>{e.currentTarget.style.background='#b5621e'}}
