@@ -1,5 +1,6 @@
 import { Reveal } from "./useInView";
 import React, { useState, useEffect, useRef } from "react";
+import frankeA800 from "../assets/frankeA800.jpg";
 
 // To add more products to this page, just add a new entry to the category. The carousel code will display it automatically.
 
@@ -206,8 +207,8 @@ const Catalogue = ({ onBack, onNavigate }) => {
       >
         <div className="min-w-[340px] max-w-[340px] bg-white rounded-2xl border border-[#e8d5c0] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden group">
           {/* Card image placeholder */}
-          <div className="h-48 bg-gradient-to-br from-stone-100 to-stone-200 flex items-center justify-center">
-            <div className="text-6xl opacity-20">☕</div>
+          <div className="h-48 overflow_hidden">
+            <img src="frankeA800" alt="Description" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           </div>
 
           <div className="p-6">
