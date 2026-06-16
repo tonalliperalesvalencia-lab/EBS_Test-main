@@ -208,7 +208,7 @@ const Catalogue = ({ onBack, onNavigate }) => {
         <div className="min-w-[340px] max-w-[340px] bg-white rounded-2xl border border-[#e8d5c0] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden group">
           {/* Card image placeholder */}
           <div className="h-48 overflow_hidden">
-            <img src="frankeA800" alt="Description" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img src={frankeA800} alt="Description" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           </div>
 
           <div className="p-6">
