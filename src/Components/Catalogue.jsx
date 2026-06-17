@@ -1,6 +1,6 @@
 import { Reveal } from "./useInView";
 import React, { useState, useEffect, useRef } from "react";
-import frankeA800 from "../assets/frankeA800.jpg";
+import frankeA800 from "../Assets/frankeA800.jpg";
 
 // To add more products to this page, just add a new entry to the category. The carousel code will display it automatically.
 
