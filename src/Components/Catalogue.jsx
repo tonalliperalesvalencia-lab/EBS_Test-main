@@ -118,6 +118,7 @@ const Catalogue = ({ onBack, onNavigate }) => {
       : products.filter((p) => p.category === activeCategory);
 console.log("franke800:", frankeA800);
   return (
+    
     <div className="min-h-screen bg-[#faf4eb]">
       {/* Header */}
       <div className="w-full bg-[#faf4eb] fixed top-0 left-0 shadow-md z-50">
@@ -136,7 +137,7 @@ console.log("franke800:", frankeA800);
       <div className="pt-24 bg-[#1c0f0a] text-white">
         <div className="max-w-[1240px] mx-auto px-4 py-20">
           <Reveal anim="anim-fade-up" delay="d-0">
-            <p className="text-[#b5621e] font-semibold tracking-widest uppercase text-sm mb-3">Our Catalogue</p>
+            <p className="text-[#b5621e] font-semibold tracking-widest uppercase text-sm mb-3">Our Coffee</p>
           </Reveal>
           <Reveal anim="anim-fade-up" delay="d-2">
             <h2 className="text-5xl font-extrabold leading-tight mb-4" style={{fontFamily:'Cormorant Garamond,serif', fontWeight:300}}>
