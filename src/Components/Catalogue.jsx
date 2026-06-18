@@ -1,6 +1,6 @@
 import { Reveal } from "./useInView";
 import React, { useState, useEffect, useRef } from "react";
-import frankeA800 from "../Assets/frankeA800.jpg";
+import franke800 from "../Assets/frankeA800.jpg";
 
 // To add more products to this page, just add a new entry to the category. The carousel code will display it automatically.
 
@@ -10,7 +10,7 @@ const products = [
     items: [
       {
         name: "Franke A800",
-        image: frankeA800,
+        image: franke800,
         description: "Fully automatic bean-to-cup machine with touchscreen interface. Perfect for high-volume cafes.",
         badge: "Best Seller",
         specs: ["Up to 250 cups/day", "Dual bean hopper", "Auto-cleaning"],
@@ -116,7 +116,7 @@ const Catalogue = ({ onBack, onNavigate }) => {
     activeCategory === "All"
       ? products
       : products.filter((p) => p.category === activeCategory);
-
+console.log("franke800:", franke800);
   return (
     <div className="min-h-screen bg-[#faf4eb]">
       {/* Header */}
