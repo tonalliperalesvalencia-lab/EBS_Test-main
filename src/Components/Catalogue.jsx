@@ -1,6 +1,8 @@
 import { Reveal } from "./useInView";
 import React, { useState, useEffect, useRef } from "react";
-import frankeA800 from "../Assets/frankeA800.jpg";
+import ECEM2 from "../assets/ECEM2.jpg";
+import AvantcoC10 from "../assets/AvantcoC10.jpg";
+import AvantcoBCG3 from "../assets/AvantcoBCG3.jpg";
 
 // To add more products to this page, just add a new entry to the category. The carousel code will display it automatically.
 
@@ -9,23 +11,26 @@ const products = [
     category: "Espresso Machines",
     items: [
       {
-        name: "Franke A800",
-        image: frankeA800,
-        description: "Fully automatic bean-to-cup machine with touchscreen interface. Perfect for high-volume cafes.",
-        badge: "Best Seller",
-        specs: ["Up to 250 cups/day", "Dual bean hopper", "Auto-cleaning"],
+        name: "Estella Caffe ECEM2 Two Group Automatic Espresso Machine",
+        image: ECEM2,
+        description: "The industry-standard two-group setup, balancing output capacity with footprint. A popular choice for busy coffee shops needing consistent volume.",
+        badge: "Good",
+        specs: ["Two group heads", "220-240 Volts", "Automatic dosing"],
+
       },
       {
-        name: "La Marzocco Linea PB",
-        description: "Commercial semi-automatic espresso machine built for precision and consistency.",
-        badge: "Professional",
-        specs: ["Dual boiler", "PID temperature control", "Stainless steel"],
+        name: "Avantco C10 12 Cup Pourover Commercial Coffee Maker",
+        image: AvantcoC10,
+        description: "Reliable batch-brew coffee maker with dual warmers, built for high-turnover environments like offices, diners, and breakrooms. Runs on standard 120V power.",
+        badge: "Good",
+        specs: ["12 cup capacity", "120 Volts", "Dual warmers"],
       },
       {
-        name: "Jura GIGA 10",
-        description: "Compact yet powerful super-automatic machine ideal for offices and small cafes.",
-        badge: "Office Pick",
-        specs: ["Up to 100 cups/day", "15 specialty drinks", "Color touchscreen"],
+        name: "Avantco BCG3 3 lb. Bulk Coffee Grinder",
+        image: AvantcoBCG3,
+        description: "Essential companion to any espresso setup, delivering fresh, consistent grinds on demand. A natural add-on for customers purchasing one of the espresso machines above.",
+        badge: "Better",
+        specs: ["3 lb. hopper capacity", "110 Volts", "Bulk grinding"],
       },
     ],
   },
@@ -116,7 +121,6 @@ const Catalogue = ({ onBack, onNavigate }) => {
     activeCategory === "All"
       ? products
       : products.filter((p) => p.category === activeCategory);
-console.log("franke800:", frankeA800);
   return (
     
     <div className="min-h-screen bg-[#faf4eb]">
