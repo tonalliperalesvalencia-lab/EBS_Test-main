@@ -6,6 +6,9 @@ import AvantcoBCG3 from "../assets/AvantcoBCG3.jpg";
 import ColombianSupremo from "../assets/ColombianSupremo.jpg";
 import LavazzaDecaf from "../assets/LavazzaDecaf.jpg";
 import LavazzaWholeBean from "../assets/LavazzaWholeBean.jpg";
+import Pitcher from "../assets/Pitcher.jpg";
+import Portafilter from "../assets/Portafilter.jpg";
+import Tamper from "../assets/Tamper.jpg";
 
 // To add more products to this page, just add a new entry to the category. The carousel code will display it automatically.
 
@@ -67,22 +70,25 @@ const products = [
     category: "Accessories & Parts",
     items: [
       {
-        name: "Precision Tamper Set",
-        description: "Calibrated tamper with ergonomic handle. Available in 58mm for commercial portafilters.",
-        badge: "Essential",
-        specs: ["58mm diameter", "Stainless steel", "30 lb calibrated"],
+        name: "Nuova Simonelli Bottomless Portafilter",
+        image: Portafilter,
+        description: "A professional-grade bottomless portafilter that lets baristas visually monitor extraction quality. A versatile upgrade compatible with select commercial espresso machines.",
+        badge: "Better",
+        specs: ["Stainless steel", "Bottomless design", "Professional grade"],
       },
       {
-        name: "Commercial Knock Box",
-        description: "Heavy-duty stainless steel knock box with rubber bar for fast, clean puck disposal.",
-        badge: "Durable",
-        specs: ["Stainless steel", "Non-slip base", "Dishwasher safe"],
+        name: "Nuova Simonelli Stainless Steel Tamper",
+        image: Tamper,
+        description: "A durable, precision-milled tamper for consistent grounds packing, ensuring even extraction shot after shot. An essential tool for any barista station.",
+        badge: "Good",
+        specs: ["2 1/4\" diameter", "Stainless steel", "Ergonomic handle"],
       },
       {
-        name: "Espresso Scale Pro",
-        description: "Waterproof precision scale with 0.1g accuracy and built-in shot timer.",
-        badge: "Precision",
-        specs: ["0.1g accuracy", "Waterproof", "Auto-timer"],
+        name: "Rhino Coffee Gear Pro Stainless Steel Milk Pitcher",
+        image: Pitcher,
+        description: "A precision-spouted frothing pitcher built for consistent milk texturing and latte art. A must-have accessory for any shop serving steamed-milk drinks.",
+        badge: "Good",
+        specs: ["Stainless steel", "Multiple size options", "Precision spout"],
       },
     ],
   },
