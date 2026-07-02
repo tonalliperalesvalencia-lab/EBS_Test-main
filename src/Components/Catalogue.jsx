@@ -213,9 +213,9 @@ const Catalogue = ({ onBack, onNavigate }) => {
       >
         <div className="min-w-[340px] max-w-[340px] bg-white rounded-2xl border border-[#e8d5c0] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden group">
           {/* Card image */}
-          <div className="h-48 overflow-hidden bg-gradient-to-br from-stone-100 to-stone-200">
+          <div className="h-48 overflow-hidden bg-gradient-to-br from-stone-100 to-stone-200 p-4">
           {item.image ? (
-            <img src={item.image} alt={item.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img src={item.image} alt={item.name} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
           ) : (
             <div className="w-full h-full flex items-center justify-center">
               <span className="text-6xl opacity-20">☕</span>
