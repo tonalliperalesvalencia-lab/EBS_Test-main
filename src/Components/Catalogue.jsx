@@ -3,6 +3,9 @@ import React, { useState, useEffect, useRef } from "react";
 import ECEM2 from "../assets/ECEM2.jpg";
 import AvantcoC10 from "../assets/AvantcoC10.jpg";
 import AvantcoBCG3 from "../assets/AvantcoBCG3.jpg";
+import ColombianSupremo from "../assets/ColombianSupremo.jpg";
+import LavazzaDecaf from "../assets/LavazzaDecaf.jpg";
+import LavazzaWholeBean from "../assets/LavazzaWholeBean.jpg";
 
 // To add more products to this page, just add a new entry to the category. The carousel code will display it automatically.
 
@@ -38,22 +41,25 @@ const products = [
     category: "Coffee Beans",
     items: [
       {
-        name: "Ethiopian Yirgacheffe",
-        description: "Bright, floral single-origin beans with notes of jasmine, lemon, and bergamot.",
-        badge: "Single Origin",
-        specs: ["Light roast", "Washed process", "Altitude: 1,800–2,200m"],
+        name: "Hometown Provisions Colombian Supremo Whole Bean Coffee",
+        image: ColombianSupremo,
+        description: "A smooth, well-rounded single-origin coffee ideal for standard drip brewing. A reliable staple that appeals to traditional coffee drinkers.",
+        badge: "Good",
+        specs: ["2 lb. bag", "5/Case", "Single-origin Colombian"],
       },
       {
-        name: "Colombian Supremo Blend",
-        description: "Smooth and balanced with caramel sweetness — our most popular espresso blend.",
-        badge: "House Blend",
-        specs: ["Medium roast", "Nutty & sweet", "Low acidity"],
+       name: "Lavazza Super Crema Whole Bean Espresso",
+       image: LavazzaWholeBean,
+       description: "A rich, balanced espresso blend with a naturally sweet crema, trusted by cafes for consistent shots. Pairs perfectly with any of our espresso machines.",
+       badge: "Better",
+       specs: ["2.2 lb. bag", "6/Case", "Espresso blend"],
       },
       {
-        name: "Sumatra Mandheling",
-        description: "Full-bodied dark roast with earthy undertones and a long, syrupy finish.",
-        badge: "Bold",
-        specs: ["Dark roast", "Wet-hulled", "Earthy & rich"],
+       name: "Lavazza Dek Decaf Whole Bean Espresso",
+       image: LavazzaDecaf,
+       description: "A full-flavored decaffeinated espresso option, ensuring your menu accommodates customers who want the taste without the caffeine.",
+       badge: "Good",
+       specs: ["1.1 lb. bag", "12/Case", "Decaffeinated"],
       },
     ],
   },
