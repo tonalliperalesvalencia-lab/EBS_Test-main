@@ -1,8 +1,8 @@
 import { Reveal } from "./useInView";
 import React, { useState, useEffect, useRef } from "react";
-import Frankes700 from "../assets/Frankes700.jpg";
-import LaMarzoccoLinea from "../assets/LaMarzoccoLinea.jpg";
-import RocketBoxer1 from "../assets/RocketBoxer1.jpg";
+import FrankeS700 from "../assets/Frankes700.jpeg";
+import LaMarzoccoLinea from "../assets/LaMarzoccoLinea.jpeg";
+import RocketBoxer1 from "../assets/RocketBoxer1.jpeg";
 import ColombianSupremo from "../assets/ColombianSupremo.jpg";
 import LavazzaDecaf from "../assets/LavazzaDecaf.jpg";
 import LavazzaWholeBean from "../assets/LavazzaWholeBean.jpg";
@@ -20,7 +20,7 @@ const products = [
     items: [
       {
           name: "Franke S700",
-          image: Frankes700,
+          image: FrankeS700,
           description: "A high-volume semi-automatic machine blending automated precision with barista creativity, capable of producing up to 160 espressos per hour with consistent, café-quality results.",
           badge: "Best",
           specs: ["iQFlow extraction technology", "Three-boiler system", "8\" touch display"], 
