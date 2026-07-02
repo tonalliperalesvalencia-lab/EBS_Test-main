@@ -1,14 +1,16 @@
 import { Reveal } from "./useInView";
 import React, { useState, useEffect, useRef } from "react";
-import ECEM2 from "../assets/ECEM2.jpg";
-import AvantcoC10 from "../assets/AvantcoC10.jpg";
-import AvantcoBCG3 from "../assets/AvantcoBCG3.jpg";
+import Frankes700 from "../assets/Frankes700.jpg";
+import LaMarzoccoLinea from "../assets/LaMarzoccoLinea.jpg";
+import RocketBoxer1 from "../assets/RocketBoxer1.jpg";
 import ColombianSupremo from "../assets/ColombianSupremo.jpg";
 import LavazzaDecaf from "../assets/LavazzaDecaf.jpg";
 import LavazzaWholeBean from "../assets/LavazzaWholeBean.jpg";
 import Pitcher from "../assets/Pitcher.jpg";
 import Portafilter from "../assets/Portafilter.jpg";
 import Tamper from "../assets/Tamper.jpg";
+import Mandheling from "../assets/Mandheling.jpg";
+import Yirgacheffe from "../assets/Yirgacheffe.jpg";
 
 // To add more products to this page, just add a new entry to the category. The carousel code will display it automatically.
 
@@ -17,26 +19,25 @@ const products = [
     category: "Espresso Machines",
     items: [
       {
-        name: "Estella Caffe ECEM2 Two Group Automatic Espresso Machine",
-        image: ECEM2,
-        description: "The industry-standard two-group setup, balancing output capacity with footprint. A popular choice for busy coffee shops needing consistent volume.",
-        badge: "Good",
-        specs: ["Two group heads", "220-240 Volts", "Automatic dosing"],
-
+          name: "Franke S700",
+          image: Frankes700,
+          description: "A high-volume semi-automatic machine blending automated precision with barista creativity, capable of producing up to 160 espressos per hour with consistent, café-quality results.",
+          badge: "Best",
+          specs: ["iQFlow extraction technology", "Three-boiler system", "8\" touch display"], 
       },
       {
-        name: "Avantco C10 12 Cup Pourover Commercial Coffee Maker",
-        image: AvantcoC10,
-        description: "Reliable batch-brew coffee maker with dual warmers, built for high-turnover environments like offices, diners, and breakrooms. Runs on standard 120V power.",
-        badge: "Good",
-        specs: ["12 cup capacity", "120 Volts", "Dual warmers"],
+          name: "La Marzocco Linea",
+          image: LaMarzoccoLinea,
+          description: "Commercial semi-automatic espresso machine built for precision and consistency.",
+          badge: "Professional",
+          specs: ["Dual boiler", "PID temperature control", "Stainless steel"],
       },
       {
-        name: "Avantco BCG3 3 lb. Bulk Coffee Grinder",
-        image: AvantcoBCG3,
-        description: "Essential companion to any espresso setup, delivering fresh, consistent grinds on demand. A natural add-on for customers purchasing one of the espresso machines above.",
-        badge: "Better",
-        specs: ["3 lb. hopper capacity", "110 Volts", "Bulk grinding"],
+          name: "Rocket Boxer 1 Group",
+          image: RocketBoxer1,
+          description: "A compact, NSF-certified heat exchanger machine built for coffee carts, food trucks, and small cafes where space and power are limited but performance can't be compromised.",
+          badge: "Better",
+          specs: ["8.3-liter copper boiler", "115V, 20 amp", "Volumetric dosing"], 
       },
     ],
   },
@@ -44,25 +45,25 @@ const products = [
     category: "Coffee Beans",
     items: [
       {
-        name: "Hometown Provisions Colombian Supremo Whole Bean Coffee",
+        name: "Ethiopian Yirgacheffe",
+        image: Yirgacheffe,
+        description: "Bright, floral single-origin beans with notes of jasmine, lemon, and bergamot.",
+        badge: "Single Origin",
+        specs: ["Light roast", "Washed process", "Altitude: 1,800–2,200m"],
+      },
+      {
+        name: "Colombian Supremo Blend",
         image: ColombianSupremo,
-        description: "A smooth, well-rounded single-origin coffee ideal for standard drip brewing. A reliable staple that appeals to traditional coffee drinkers.",
-        badge: "Good",
-        specs: ["2 lb. bag", "5/Case", "Single-origin Colombian"],
+        description: "Smooth and balanced with caramel sweetness — our most popular espresso blend.",
+        badge: "House Blend",
+        specs: ["Medium roast", "Nutty & sweet", "Low acidity"],
       },
       {
-       name: "Lavazza Super Crema Whole Bean Espresso",
-       image: LavazzaWholeBean,
-       description: "A rich, balanced espresso blend with a naturally sweet crema, trusted by cafes for consistent shots. Pairs perfectly with any of our espresso machines.",
-       badge: "Better",
-       specs: ["2.2 lb. bag", "6/Case", "Espresso blend"],
-      },
-      {
-       name: "Lavazza Dek Decaf Whole Bean Espresso",
-       image: LavazzaDecaf,
-       description: "A full-flavored decaffeinated espresso option, ensuring your menu accommodates customers who want the taste without the caffeine.",
-       badge: "Good",
-       specs: ["1.1 lb. bag", "12/Case", "Decaffeinated"],
+        name: "Sumatra Mandheling",
+        image: Mandheling,
+        description: "Full-bodied dark roast with earthy undertones and a long, syrupy finish.",
+        badge: "Bold",
+        specs: ["Dark roast", "Wet-hulled", "Earthy & rich"],
       },
     ],
   },
