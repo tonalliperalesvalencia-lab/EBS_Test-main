@@ -1,22 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.4d8924be.css",
-    "main.js": "/static/js/main.63b92d27.js",
+    "main.js": "/static/js/main.061ca3ad.js",
     "static/media/Main.jpg": "/static/media/Main.43ade8e486b7ec954a52.jpg",
+    "static/media/RocketBoxer1.jpeg": "/static/media/RocketBoxer1.970cd95c75a184a835f9.jpeg",
     "static/media/LavazzaDecaf.jpg": "/static/media/LavazzaDecaf.72854975c0b520665fa4.jpg",
     "static/media/LavazzaWholeBean.jpg": "/static/media/LavazzaWholeBean.ea723214a62133c185f0.jpg",
-    "static/media/ECEM2.jpg": "/static/media/ECEM2.1abb9029c6727febb23d.jpg",
+    "static/media/Boxer3Group.jpg": "/static/media/Boxer3Group.74ea9f144d417a49e0e6.jpg",
+    "static/media/Mandheling.jpg": "/static/media/Mandheling.a48744439b2a0a2624d8.jpg",
+    "static/media/LaMarzoccoLinea.jpeg": "/static/media/LaMarzoccoLinea.e7997db884ae16c57b34.jpeg",
     "static/media/ColombianSupremo.jpg": "/static/media/ColombianSupremo.c246f67f33edeb04b3ff.jpg",
     "static/media/Pitcher.jpg": "/static/media/Pitcher.e878755ed0680c6e9142.jpg",
-    "static/media/AvantcoC10.jpg": "/static/media/AvantcoC10.6e7850e5a0d469fd93d9.jpg",
-    "static/media/AvantcoBCG3.jpg": "/static/media/AvantcoBCG3.fa0d089291f5ef24db22.jpg",
+    "static/media/Frankes700.jpeg": "/static/media/Frankes700.55b0881f26863bd875e1.jpeg",
     "static/media/Portafilter.jpg": "/static/media/Portafilter.600fbf4a402725435097.jpg",
     "index.html": "/index.html",
     "main.4d8924be.css.map": "/static/css/main.4d8924be.css.map",
-    "main.63b92d27.js.map": "/static/js/main.63b92d27.js.map"
+    "main.061ca3ad.js.map": "/static/js/main.061ca3ad.js.map"
   },
   "entrypoints": [
     "static/css/main.4d8924be.css",
-    "static/js/main.63b92d27.js"
+    "static/js/main.061ca3ad.js"
   ]
 }
