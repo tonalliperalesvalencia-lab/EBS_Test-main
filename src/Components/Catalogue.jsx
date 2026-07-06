@@ -11,6 +11,7 @@ import Portafilter from "../assets/Portafilter.jpg";
 import Tamper from "../assets/Tamper.jpg";
 import Mandheling from "../assets/Mandheling.jpg";
 import Yirgacheffe from "../assets/Yirgacheffe.jpg";
+import BoxerThreeGroup from "../assets/Boxer3Group.jpg";
 
 // To add more products to this page, just add a new entry to the category. The carousel code will display it automatically.
 
@@ -26,8 +27,8 @@ const products = [
           specs: ["iQFlow extraction technology", "Three-boiler system", "8\" touch display"], 
       },
       {
-          name: "La Marzocco Linea",
-          image: LaMarzoccoLinea,
+          name: "Rocket Boxer 3 Group",
+          image: BoxerThreeGroup,
           description: "Commercial semi-automatic espresso machine built for precision and consistency.",
           badge: "Professional",
           specs: ["Dual boiler", "PID temperature control", "Stainless steel"],
@@ -37,7 +38,7 @@ const products = [
           image: RocketBoxer1,
           description: "A compact, NSF-certified heat exchanger machine built for coffee carts, food trucks, and small cafes where space and power are limited but performance can't be compromised.",
           badge: "Better",
-          specs: ["8.3-liter copper boiler", "115V, 20 amp", "Volumetric dosing"], 
+          specs: ["23-liter copper boiler", "5 kW power", "Volumetric dosing with shot timers"], 
       },
     ],
   },
