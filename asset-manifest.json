@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4d8924be.css",
-    "main.js": "/static/js/main.061ca3ad.js",
+    "main.js": "/static/js/main.92f49e3d.js",
     "static/media/Main.jpg": "/static/media/Main.43ade8e486b7ec954a52.jpg",
     "static/media/RocketBoxer1.jpeg": "/static/media/RocketBoxer1.970cd95c75a184a835f9.jpeg",
     "static/media/LavazzaDecaf.jpg": "/static/media/LavazzaDecaf.72854975c0b520665fa4.jpg",
@@ -15,10 +15,10 @@
     "static/media/Portafilter.jpg": "/static/media/Portafilter.600fbf4a402725435097.jpg",
     "index.html": "/index.html",
     "main.4d8924be.css.map": "/static/css/main.4d8924be.css.map",
-    "main.061ca3ad.js.map": "/static/js/main.061ca3ad.js.map"
+    "main.92f49e3d.js.map": "/static/js/main.92f49e3d.js.map"
   },
   "entrypoints": [
     "static/css/main.4d8924be.css",
-    "static/js/main.061ca3ad.js"
+    "static/js/main.92f49e3d.js"
   ]
 }
