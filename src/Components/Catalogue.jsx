@@ -8,7 +8,7 @@ import LavazzaDecaf from "../assets/LavazzaDecaf.jpg";
 import LavazzaWholeBean from "../assets/LavazzaWholeBean.jpg";
 import Pitcher from "../assets/Pitcher.jpg";
 import Portafilter from "../assets/Portafilter.jpg";
-import Tamper from "../assets/Tamper.jpg";
+import Tamper from "../assets/PUQ.jpg";
 import Mandheling from "../assets/Mandheling.jpg";
 import Yirgacheffe from "../assets/Yirgacheffe.jpg";
 import BoxerThreeGroup from "../assets/Boxer3Group.jpg";
@@ -72,24 +72,24 @@ const products = [
     category: "Accessories & Parts",
     items: [
       {
-        name: "Nuova Simonelli Bottomless Portafilter",
+        name: "Bottomless Portafilter",
         image: Portafilter,
         description: "A professional-grade bottomless portafilter that lets baristas visually monitor extraction quality. A versatile upgrade compatible with select commercial espresso machines.",
-        badge: "Better",
+        badge: "",
         specs: ["Stainless steel", "Bottomless design", "Professional grade"],
       },
       {
-        name: "Nuova Simonelli Stainless Steel Tamper",
+        name: "Automatic Espresso Tamper",
         image: Tamper,
-        description: "A durable, precision-milled tamper for consistent grounds packing, ensuring even extraction shot after shot. An essential tool for any barista station.",
-        badge: "Good",
-        specs: ["2 1/4\" diameter", "Stainless steel", "Ergonomic handle"],
+        description: "A durable, professional grade tamper for consistent grounds packing, ensuring even extraction shot after shot. An essential tool for any barista station.",
+        badge: "",
+        specs: ["58mm diameter", "Automatic", "Efficient"],
       },
       {
-        name: "Rhino Coffee Gear Pro Stainless Steel Milk Pitcher",
+        name: "Stainless Steel Milk Pitcher",
         image: Pitcher,
         description: "A precision-spouted frothing pitcher built for consistent milk texturing and latte art. A must-have accessory for any shop serving steamed-milk drinks.",
-        badge: "Good",
+        badge: "",
         specs: ["Stainless steel", "Multiple size options", "Precision spout"],
       },
     ],
@@ -106,6 +106,8 @@ const badgeColors = {
   "Essential": "bg-blue-100 text-blue-800",
   "Durable": "bg-stone-200 text-stone-800",
   "Precision": "bg-indigo-100 text-indigo-800",
+  "Best": "bg-[#1c0f0a] text-white",
+  "Better": "bg-[#1c0f0a] text-white",
 };
 
 const Catalogue = ({ onBack, onNavigate }) => {

@@ -52,7 +52,7 @@ const process = [
 ];
 
 const brandClients = [
-  { name: "McDonald's" },
+  { name: "Franke Coffee Systems" },
   { name: "7‑Eleven" },
   { name: "Panera Bread" },
   { name: "Scooter's Coffee" },
@@ -66,17 +66,16 @@ const stats = [
 ];
 
 const brands = [
-  "La Marzocco", "Franke", "Jura", "De'Longhi", "Breville",
-  "Nuova Simonelli", "Rancilio", "Gaggia", "WMF", "Melitta",
+  "La Marzocco", "Franke", "Nuova Simonelli", "Rancilio", "Gaggia", "WMF", "Melitta", "La Cimbali"
 ];
 
 const pmIntervals = [
-  { freq: "3‑Month", task: "Basic inspection, gasket check, water quality test" },
-  { freq: "6‑Month", task: "Group head rebuild, solenoid inspection, descaling" },
-  { freq: "9‑Month", task: "Advanced diagnostics, pressure calibration, pump test" },
-  { freq: "1‑Year", task: "Full system calibration, control board health, component replacement" },
-  { freq: "2‑4 Years", task: "Full rebuild – pumps, valves, heating elements, flow meters" },
-  { freq: "5‑7 Years", task: "Complete machine overhaul or replacement consultation" },
+  { freq: "3‑Month", task: "Regulalry scheduled quarterly preventative maintenance" },
+  { freq: "6‑Month", task: "Regulalry scheduled quarterly preventative maintenance" },
+  { freq: "9‑Month", task: "Regulalry scheduled quarterly preventative maintenance" },
+  { freq: "1‑Year", task: "Full consumables parts replacement, full unit inspection, and pressure tests" },
+  { freq: "2‑4 Years", task: "" },
+  { freq: "3‑5 Years", task: "Full rebuild – pumps, valves, heating elements, flow meters" },
 ];
 
 const Repair = ({ onBack }) => {
@@ -137,7 +136,7 @@ const Repair = ({ onBack }) => {
           </Reveal>
           <Reveal anim="anim-fade-up" delay="d-3">
             <p className="text-[#d4b49a] text-xl max-w-xl leading-relaxed mb-10 font-light">
-              Primary service partner for McDonald’s, 7‑Eleven, Panera Bread, and Scooter’s Coffee. Factory‑trained
+              Primarily seen at McDonalds, 7‑Eleven, Panera Bread, and Scooter’s Coffee. Factory‑trained
               technicians delivering precision calibration and rapid response for mission‑critical high‑volume
               operations.
             </p>
@@ -146,7 +145,7 @@ const Repair = ({ onBack }) => {
             <div className="flex flex-wrap gap-6">
               <div className="bg-white/10 backdrop-blur rounded-2xl px-6 py-4 border border-white/10">
                 <div className="text-3xl font-extrabold text-[#b5621e]">90‑Day</div>
-                <div className="text-[#d4b49a] text-sm mt-1">Parts & Labour Warranty</div>
+                <div className="text-[#d4b49a] text-sm mt-1">Parts & Labor Warranty</div>
               </div>
               <div className="bg-white/10 backdrop-blur rounded-2xl px-6 py-4 border border-white/10">
                 <div className="text-3xl font-extrabold text-[#b5621e]">24hr</div>
@@ -286,7 +285,7 @@ const Repair = ({ onBack }) => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
           <div>
             <h3 className="text-5xl font-extrabold text-[#1c0f0a] leading-tight">
-              We Service All Brands
+              We Service All Commercial Brands
             </h3>
             <p className="text-gray-400 max-w-md text-sm leading-relaxed mt-3">
               Regardless of where your equipment was purchased, our factory‑trained technicians service every
