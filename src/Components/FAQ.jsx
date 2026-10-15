@@ -7,7 +7,7 @@ const categories = [
     questions: [
       {
         q: "What brands of espresso machines do you carry?",
-        a: "We carry Rocket Espresso Milano, La Marzocco, Nuova Simonelli, Victoria Arduino, Wega, Slayer, Casrio Undici (Faema), and Franky Coffee Systems. We also supply ice machines, reverse osmosis/filtration systems, consumables, dry goods, and disposables."
+        a: "We carry Rocket Espresso Milano, Nuova Simonelli, Victoria Arduino, Wega, Slayer, Casrio Undici (Faema), and Franke Coffee Systems. We also supply ice machines, reverse osmosis/filtration systems, consumables, dry goods, and disposables."
       },
       {
         q: "Can you help me choose the right machine for my café?",

@@ -47,7 +47,7 @@ const Contact = ({ onBack }) => {
         style={{ background: 'rgba(250,244,235,0.97)', backdropFilter: 'blur(8px)' }}>
         <div className="flex justify-between items-center h-20 max-w-[1400px] mx-auto px-8">
           <div className="flex flex-col leading-none">
-            <span className="text-xs tracking-[0.3em] uppercase font-medium" style={{ color: '#b5621e' }}>Express</span>
+            <span className="text-xs tracking-[0.3em] uppercase font-medium" style={{ color: '#b5621e' }}>Espresso</span>
             <span className="text-xl font-light" style={{ fontFamily: 'Cormorant Garamond,serif', color: '#1c0f0a' }}>Beverage Solutions</span>
           </div>
           <button onClick={onBack} className="text-sm font-light flex items-center gap-2 hover:opacity-60 transition-opacity" style={{ color: '#1c0f0a' }}>

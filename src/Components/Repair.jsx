@@ -66,7 +66,7 @@ const stats = [
 ];
 
 const brands = [
-  "La Marzocco", "Franke", "Nuova Simonelli", "Rancilio", "Gaggia", "WMF", "Melitta", "La Cimbali"
+  "Franke", "Nuova Simonelli", "Rancilio", "Gaggia", "WMF", "Melitta", "La Cimbali"
 ];
 
 const pmIntervals = [
@@ -364,7 +364,7 @@ const Repair = ({ onBack }) => {
                   type="text"
                   value={formData.machine}
                   onChange={(e) => setFormData({ ...formData, machine: e.target.value })}
-                  placeholder="e.g. La Marzocco Linea PB"
+                  placeholder="e.g. Franke S700"
                   className="w-full px-4 py-3 rounded-xl border border-[#e8d5c0] text-[#1c0f0a] placeholder-gray-300 focus:outline-none focus:border-[#1c0f0a] transition-colors"
                 />
               </div>

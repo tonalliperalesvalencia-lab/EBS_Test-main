@@ -20,24 +20,63 @@ const products = [
     category: "Espresso Machines",
     items: [
       {
+        name: "Estella Caffe ECEM1",
+        image: null, // Replace with a locally stored product image
+        description: "A one-group automatic machine for smaller cafés, with programmable shot settings, continuous-flow operation, a steam wand, and a hot-water outlet.",
+        badge: "Automatic",
+        specs: [
+          "1 group",
+          "120V / 2,000W",
+          "5.68 L heat-exchange boiler",
+          "Direct water connection",
+          "Automatic cleaning function",
+        ],
+      },
+      {
+        name: "Astra Mega II Compact",
+        image: null, // Replace with a locally stored product image
+        description: "A compact two-group machine for cafés that need more brewing capacity while keeping a smaller counter footprint.",
+        badge: "Compact",
+        specs: [
+          "2 groups",
+          "110V / 2,000W",
+          "7 L boiler",
+          "Compact frame",
+          "Direct water connection",
+        ],
+      },
+      {
+        name: "Nuova Simonelli Appia Life 2 Group",
+        image: null, // Replace with a locally stored product image
+        description: "A two-group machine for busy cafés, offering both volumetric and manual dosing with a soft-infusion system.",
+        badge: "Volumetric",
+        specs: [
+          "2 groups",
+          "220V / 3,400W",
+          "Two steam wands",
+          "Direct water connection",
+          "Energy Star qualified",
+        ],
+      },
+      {
           name: "Franke S700",
           image: FrankeS700,
           description: "A high-volume semi-automatic machine blending automated precision with barista creativity, capable of producing up to 160 espressos per hour with consistent, café-quality results.",
-          badge: "Best",
+          badge: "High Volume",
           specs: ["iQFlow extraction technology", "Three-boiler system", "8\" touch display"], 
       },
       {
           name: "Rocket Boxer 3 Group",
           image: BoxerThreeGroup,
           description: "Commercial semi-automatic espresso machine built for precision and consistency.",
-          badge: "Professional",
+          badge: "Commercial",
           specs: ["Dual boiler", "PID temperature control", "Stainless steel"],
       },
       {
           name: "Rocket Boxer 1 Group",
           image: RocketBoxer1,
           description: "A compact, NSF-certified heat exchanger machine built for coffee carts, food trucks, and small cafes where space and power are limited but performance can't be compromised.",
-          badge: "Better",
+          badge: "Compact",
           specs: ["23-liter copper boiler", "5 kW power", "Volumetric dosing with shot timers"], 
       },
     ],
@@ -98,7 +137,9 @@ const products = [
 
 const badgeColors = {
   "Best Seller": "bg-[#f5e6d3] text-[#6b3f2a]",
-  "Professional": "bg-[#1c0f0a] text-white",
+  "Commercial": "bg-[#1c0f0a] text-white",
+  "Automatic": "bg-[#1c0f0a] text-white",
+  "Volumetric": "bg-[#1c0f0a] text-white",
   "Office Pick": "bg-emerald-100 text-emerald-800",
   "Single Origin": "bg-orange-100 text-orange-800",
   "House Blend": "bg-[#1c0f0a] text-white",
@@ -106,8 +147,8 @@ const badgeColors = {
   "Essential": "bg-blue-100 text-blue-800",
   "Durable": "bg-stone-200 text-stone-800",
   "Precision": "bg-indigo-100 text-indigo-800",
-  "Best": "bg-[#1c0f0a] text-white",
-  "Better": "bg-[#1c0f0a] text-white",
+  "High Volume": "bg-[#1c0f0a] text-white",
+  "Compact": "bg-[#1c0f0a] text-white",
 };
 
 const Catalogue = ({ onBack, onNavigate }) => {
