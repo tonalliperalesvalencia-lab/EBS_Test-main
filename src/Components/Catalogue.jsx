@@ -12,6 +12,9 @@ import Tamper from "../assets/PUQ.jpg";
 import Mandheling from "../assets/Mandheling.jpg";
 import Yirgacheffe from "../assets/Yirgacheffe.jpg";
 import BoxerThreeGroup from "../assets/Boxer3Group.jpg";
+import EstellaCaffeECEM1 from "../assets/EstellaCaffeECEM1.jpg";
+import AstraMegaIICompact from "../assets/AstraMegaIICompact.jpg";
+import NuovaSimonelliAppiaLife2Group from "../assets/NuovaSimonelliAppiaLife2Group.jpg";
 
 // To add more products to this page, just add a new entry to the category. The carousel code will display it automatically.
 
@@ -21,7 +24,7 @@ const products = [
     items: [
       {
         name: "Estella Caffe ECEM1",
-        image: null, // Replace with a locally stored product image
+        image: EstellaCaffeECEM1,
         description: "A one-group automatic machine for smaller cafés, with programmable shot settings, continuous-flow operation, a steam wand, and a hot-water outlet.",
         badge: "Automatic",
         specs: [
@@ -34,7 +37,7 @@ const products = [
       },
       {
         name: "Astra Mega II Compact",
-        image: null, // Replace with a locally stored product image
+        image: AstraMegaIICompact,
         description: "A compact two-group machine for cafés that need more brewing capacity while keeping a smaller counter footprint.",
         badge: "Compact",
         specs: [
@@ -47,7 +50,7 @@ const products = [
       },
       {
         name: "Nuova Simonelli Appia Life 2 Group",
-        image: null, // Replace with a locally stored product image
+        image: NuovaSimonelliAppiaLife2Group,
         description: "A two-group machine for busy cafés, offering both volumetric and manual dosing with a soft-infusion system.",
         badge: "Volumetric",
         specs: [
