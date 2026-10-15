@@ -268,7 +268,7 @@ const Catalogue = ({ onBack, onNavigate }) => {
         anim="anim-fade-up"
         delay={["d-1", "d-2", "d-3"][idx % 3]}
       >
-        <div className="min-w-[340px] max-w-[340px] bg-white rounded-2xl border border-[#e8d5c0] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden group">
+        <div className="min-w-[340px] max-w-[340px] h-[560px] bg-white rounded-2xl border border-[#e8d5c0] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden group flex flex-col">
           {/* Card image */}
           <div className="h-48 overflow-hidden bg-white">
           {item.image ? (
@@ -280,7 +280,7 @@ const Catalogue = ({ onBack, onNavigate }) => {
           )}
           </div>
 
-          <div className="p-6">
+          <div className="p-6 flex flex-col flex-1">
             <div className="flex justify-between items-start mb-3">
               <span
                 className={`text-xs font-bold px-3 py-1 rounded-full ${
@@ -311,7 +311,7 @@ const Catalogue = ({ onBack, onNavigate }) => {
               ))}
             </ul>
 
-            <button className="w-full py-2.5 bg-[#1c0f0a] text-white rounded-xl text-sm font-semibold hover:bg-opacity-90 transition-all duration-200 group-hover:shadow-md">
+            <button className="w-full mt-auto py-2.5 bg-[#1c0f0a] text-white rounded-xl text-sm font-semibold hover:bg-opacity-90 transition-all duration-200 group-hover:shadow-md">
               Request a Quote
             </button>
           </div>
