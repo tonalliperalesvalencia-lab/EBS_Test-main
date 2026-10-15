@@ -14,7 +14,7 @@ import Yirgacheffe from "../assets/Yirgacheffe.jpg";
 import BoxerThreeGroup from "../assets/Boxer3Group.jpg";
 import EstellaECEM1 from "../assets/EstellaECEM1.jpg";
 import ASTRAM2C from "../assets/ASTRAM2C-014-1.jpg";
-import NuovaSmonelliTwoGroup from "assets\NuovaSimonelliTwoGroup.jpg";
+import NuovaSmonelliTwoGroup from "assets/NuovaSimonelliTwoGroup.jpg";
 
 // To add more products to this page, just add a new entry to the category. The carousel code will display it automatically.
 
